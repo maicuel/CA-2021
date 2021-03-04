@@ -54,7 +54,7 @@ a:hover {
 /* hero */
 .hero {
   padding: 5rem 0 10rem;
-  background-image: url("/images/bg-blue.png");
+  background-image: url("../images/bg-blue.png");
   background-color: #091744;
   background-repeat: no-repeat;
   background-size: cover;
