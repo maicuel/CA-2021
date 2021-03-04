@@ -5,6 +5,7 @@
 body {
   font-family: "Ubuntu Condensed", sans-serif;
   font-weight: 400;
+  background-color: #187a9a;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -65,7 +66,7 @@ a:hover {
   align-items: center;
 }
 .hero .logo-copa {
-  max-width: 400px;
+  max-width: 25%;
 }
 .hero .date {
   text-transform: uppercase;
@@ -74,6 +75,21 @@ a:hover {
 .hero .btn-outline-light {
   padding: 10px 10rem;
   border-radius: 100px;
+}
+
+/* Big Triangle */
+section.ss-style-bigtriangle {
+  padding: 0;
+}
+
+svg#bigTriangleColor {
+  pointer-events: none;
+}
+
+#bigTriangleColor path {
+  fill: #091744;
+  stroke: #091744;
+  stroke-width: 2;
 }
 
 /* ===================================================================

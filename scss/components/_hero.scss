@@ -13,7 +13,7 @@
     align-items: center;
 
     .logo-copa {
-        max-width: 400px;
+        max-width: 25%;
     }
 
     .date {
@@ -27,6 +27,24 @@
     }    
 }
 
+
+
+/* Big Triangle */
+
+section.ss-style-bigtriangle {
+    padding: 0;
+}
+
+svg#bigTriangleColor {
+    pointer-events: none;
+  }
+  
+  #bigTriangleColor path {
+    fill: $blue;
+    stroke: $blue;
+    stroke-width: 2;
+  }
+  
 
 
 
