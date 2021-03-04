@@ -1,0 +1,77 @@
+
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* base Colors */ 
+
+
+$white: #fff;
+$black: #000;
+$blue: #091744;
+$light-blue: #187a9a;
+$yellow: #fcc000;
+$green: #258833;
+
+/* Fonts */
+
+$primary-font: 'Ubuntu', sans-serif;
+$secondary-font: 'Ubuntu Condensed', sans-serif;
+
+
+body {
+    font-family: $secondary-font;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $primary-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.3em;
+}
+
+h1 {
+    font-size: 46px;
+    color: $white;
+    letter-spacing: 8px;
+}
+
+h2 {
+    font-size: 35px;
+    letter-spacing: 4px;
+}
+
+h3{
+    font-size: 20px;
+    color: $yellow;
+}
+
+
+a:hover {
+    transition: 0.5s;
+}
+
+
+
+@media screen and (max-width:400px) {
+
+
+h1 {
+    font-size: 32px;
+    color: $white;
+    letter-spacing: 8px;
+}
+
+h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+h3{
+    font-size: 15px;
+    color: $yellow;
+}
+
+  }

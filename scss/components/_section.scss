@@ -1,0 +1,156 @@
+
+section {
+    padding: 2rem;
+    color: $white;
+
+    .title{
+        margin: 5rem 0 1rem;
+
+        h1:before {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 5px;
+             margin: -2rem auto;
+            background-color: $yellow;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    .row {
+        padding: 2rem;
+    }
+
+    table {
+        
+        td{
+            border-bottom: 1px solid $white;
+            padding: 10px 0;
+        }
+    }
+
+    .price {
+        margin-top: 5rem;
+    }
+
+    .price-heading > h3 {
+        padding: .8rem;
+        background-color: $yellow;
+        font-weight: 400;
+        color: $white;
+        letter-spacing: 3px;
+        font-size: 1rem;
+    }
+
+    .price-value > p {
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 3rem;
+
+        &::before {
+            content: '$';
+            font-weight: 500;
+            font-size: 1.8rem;
+            position: relative;
+            top: -5px;
+            padding-right: 5px;
+        }
+
+        &::after {
+            content: 'neto + iva';
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 1.2rem;
+            display: block;
+            position: relative;
+            top: -10px;
+        }
+    }
+
+    .notes {
+        font-size: .9rem; 
+
+        .notes-title {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+    }
+}
+    
+#oro {
+    // background-image: url('/images/bg-lightblue.png');
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    background-color: $light-blue;
+    background-blend-mode: soft-light;
+    padding-top: 10rem;
+}
+
+
+#plata{
+    // background-image: url('/images/bg-blue.png');
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    background-color: $green;
+    background-blend-mode: soft-light;
+}
+
+#grupos{
+    // background-image: url('/images/bg-white.png');
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    background-color: $white;
+
+    h1 {
+        color: $blue;
+    }
+
+    img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+
+#fixture {
+    // background-image: url('/images/bg-blue.png');
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    background-color: $blue;
+    background-blend-mode: soft-light;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .row {
+        padding: .5rem;
+    }
+
+    .price-value > p {
+        font-family: $primary-font;
+        font-weight: 700;
+        font-size: 2.4rem;
+
+        &::before {
+            content: '$';
+            font-weight: 500;
+            font-size: 1.8rem;
+            position: relative;
+            top: -5px;
+            padding-right: 5px;
+        }
+
+        &::after {
+            content: 'neto + iva';
+            font-family: $secondary-font;
+            font-weight: 400;
+            font-size: 1.2rem;
+            display: block;
+            position: relative;
+            top: -10px;
+        }
+    }
+}

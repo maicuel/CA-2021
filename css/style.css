@@ -1,0 +1,385 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/* base Colors */
+/* Fonts */
+body {
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 46px;
+  color: #fff;
+  letter-spacing: 8px;
+}
+
+h2 {
+  font-size: 35px;
+  letter-spacing: 4px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #fcc000;
+}
+
+a:hover {
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: 8px;
+  }
+
+  h2 {
+    font-size: 30px;
+    letter-spacing: 4px;
+  }
+
+  h3 {
+    font-size: 15px;
+    color: #fcc000;
+  }
+}
+/* hero */
+.hero {
+  padding: 5rem 0 10rem;
+  background-image: url("/images/bg-blue.png");
+  background-color: #091744;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right;
+  background-attachment: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .logo-copa {
+  max-width: 400px;
+}
+.hero .date {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+.hero .btn-outline-light {
+  padding: 10px 10rem;
+  border-radius: 100px;
+}
+
+/* ===================================================================
+ * # header 
+ *
+ * ------------------------------------------------------------------- */
+.s-nav {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 78px;
+  text-align: center;
+  z-index: 100;
+}
+
+.s-nav.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.header-nav-wrap {
+  display: none;
+  text-align: right;
+  float: right;
+  margin: 0;
+  height: auto;
+  width: 30%;
+  background-color: #050505;
+  padding: 120px 44px 64px;
+}
+
+.header-nav-wrap .header-main-nav {
+  display: block;
+  padding-left: 0;
+  height: auto;
+  margin: 0 0 4rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-nav-wrap .header-main-nav li {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-nav-wrap .header-main-nav li a {
+  padding: 18px 0;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.header-menu-toggle {
+  display: block;
+}
+
+.header-nav-wrap ul {
+  display: inline-block;
+  list-style: none;
+  margin-left: 0;
+  margin-top: 18px;
+}
+
+.header-nav-wrap li {
+  display: inline-block;
+  padding-left: 0;
+}
+
+.header-nav-wrap li a {
+  display: block;
+  line-height: calc(78px - (18px * 2));
+}
+
+.header-main-nav a {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 600;
+  position: relative;
+}
+
+.header-main-nav a:hover,
+.header-main-nav a:focus,
+.header-main-nav a:active {
+  color: #ffffff;
+}
+
+.header-main-nav .current a {
+  color: #ffffff;
+}
+
+.header-menu-toggle {
+  background-color: #fcc000;
+  height: 42px;
+  width: 42px;
+  line-height: 42px;
+  font-family: "Roboto", serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+  position: absolute;
+  right: 32px;
+  top: 18px;
+}
+
+.header-menu-toggle:hover,
+.header-menu-toggle:focus {
+  color: #ffffff;
+}
+
+.header-menu-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin-top: -1px;
+  background-color: #ffffff;
+  transition: all 0.5s;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 9px;
+  right: auto;
+  bottom: auto;
+}
+
+.header-menu-toggle span::before,
+.header-menu-toggle span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  position: absolute;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.header-menu-toggle span::before {
+  top: -9px;
+}
+
+.header-menu-toggle span::after {
+  bottom: -9px;
+}
+
+.header-menu-toggle.is-clicked span {
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.1s;
+}
+
+.header-menu-toggle.is-clicked span::before,
+.header-menu-toggle.is-clicked span::after {
+  background-color: white;
+}
+
+.header-menu-toggle.is-clicked span::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.header-menu-toggle.is-clicked span::after {
+  bottom: 0;
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav-wrap {
+    display: none;
+    text-align: right;
+    float: right;
+    margin: 0;
+    height: auto;
+    width: 45%;
+    background-color: #050505;
+    padding: 120px 44px 64px;
+  }
+}
+section {
+  padding: 2rem;
+  color: #fff;
+}
+section .title {
+  margin: 5rem 0 1rem;
+}
+section .title h1:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  margin: -2rem auto;
+  background-color: #fcc000;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+section .row {
+  padding: 2rem;
+}
+section table td {
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+}
+section .price {
+  margin-top: 5rem;
+}
+section .price-heading > h3 {
+  padding: 0.8rem;
+  background-color: #fcc000;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 1rem;
+}
+section .price-value > p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+section .price-value > p::before {
+  content: "$";
+  font-weight: 500;
+  font-size: 1.8rem;
+  position: relative;
+  top: -5px;
+  padding-right: 5px;
+}
+section .price-value > p::after {
+  content: "neto + iva";
+  font-family: "Ubuntu Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  display: block;
+  position: relative;
+  top: -10px;
+}
+section .notes {
+  font-size: 0.9rem;
+}
+section .notes .notes-title {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+#oro {
+  background-color: #187a9a;
+  background-blend-mode: soft-light;
+  padding-top: 10rem;
+}
+
+#plata {
+  background-color: #258833;
+  background-blend-mode: soft-light;
+}
+
+#grupos {
+  background-color: #fff;
+}
+#grupos h1 {
+  color: #091744;
+}
+#grupos img {
+  width: 70%;
+  height: auto;
+}
+
+#fixture {
+  background-color: #091744;
+  background-blend-mode: soft-light;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    padding: 0.5rem;
+  }
+
+  .price-value > p {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+  .price-value > p::before {
+    content: "$";
+    font-weight: 500;
+    font-size: 1.8rem;
+    position: relative;
+    top: -5px;
+    padding-right: 5px;
+  }
+  .price-value > p::after {
+    content: "neto + iva";
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    display: block;
+    position: relative;
+    top: -10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
